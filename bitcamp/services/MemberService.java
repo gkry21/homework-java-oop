@@ -59,4 +59,40 @@ public class MemberService {
 			}
 			return msg;
 		}
+		/*
+		 * 4. 회원탈퇴 기능
+		 */
+		public String withDraw(MemberBean param) {
+			String msg = "회원탈퇴 완료";
+			return msg;
+		}
+		/*
+		 * 5. 아이디 체크
+		 */
+		public String existId(String id) {
+			String msg = "가입 가능한 아이디 입니다.";
+			
+			MemberBean member = new MemberBean();
+			
+			for(int i=0;i<= count; i++) {
+				if(id.equals(members[i].getId())) {
+					msg = "이미 존재하는 아이디";
+					break;
+				}
+			}
+			return msg;
+		}
+		/*
+		 * 6. 로그인 
+		 */
+		public String login(MemberBean param) {
+			String msg = "로그인 실패";
+			for(int i=0;i<count;i++) {
+				if(param.getId().equals(members[i].getId()) && param.getPw().equals(members[i].getPw()));
+						msg = "로그인 되었습니다.";
+						break;
+				
+			}
+			return msg;
+		}
 }

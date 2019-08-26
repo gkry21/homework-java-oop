@@ -57,7 +57,9 @@ public class MemberController {
 							JOptionPane.showMessageDialog(null, service.changePassword(member));
 				
 				break;	
-			case "4" :break;	
+			case "4" : JOptionPane.showInputDialog(null, "회원탈퇴 완료");
+				break;	
+			 				
 			case "5" :break;	
 			case "6" :break;	
 			default : 

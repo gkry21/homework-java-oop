@@ -59,9 +59,9 @@ public class MemberBean {
 									+ "아이디 : \n"
 									+ "비밀번호 : \n"
 									+ "주민번호 : \n"
-									+ "아이디 : \n"
-									+ "아이디 : \n"
-									+ "아이디 : \n",
+									+ "혈액형 : \n"
+									+ "키 : \n"
+									+ "몸무게 : \n",
 									name,id,pw,ssn,blood,height,weight);
 	}
 		
